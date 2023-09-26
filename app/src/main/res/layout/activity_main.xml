@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/targetWordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Target Word: "
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/guessEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your guess"
+        android:layout_below="@+id/targetWordTextView"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@+id/guessEditText"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_below="@+id/submitButton"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/correctnessTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resetButton"
+        android:layout_marginTop="16dp"
+        android:text="Correctness: "
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/guessesRemainingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guesses remaining: 3"
+        android:textSize="16sp"
+        android:layout_below="@+id/correctnessTextView"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
